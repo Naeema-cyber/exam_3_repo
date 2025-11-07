@@ -23,4 +23,5 @@ Data Training
 - Here, we splitted our data into training and testing sets in a ratio of 0.2 which means the traing see has 80% of the data and the testing set takes the remaining 20%. This will enable the model to have data for both training and testing sets.
 - Here we used Logistic Regression Classifier to train our model beacause our target variable is classified into 4 categories.A confusion matrix was plotted to understand the model better. 
 
-_
+Build and Compare multiple models
+- I trained
