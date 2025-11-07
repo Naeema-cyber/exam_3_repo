@@ -1,0 +1,26 @@
+The objective of the analysis is to ensure the model predicts well.
+
+Aproach from data cleaning to model deployment:
+preliminary data analysis and cleaning
+- Downloaded and loaded dataset from the given url
+- Display the first 6 rows
+-Check for missing values and remove them to avoid missingness or data leakage.There were no missing values in the data.
+- Checked for duplicates and handle them. There were duplicates in the data but they were dropped to avoid bias.
+- Verified the data types present in the data. The predominant data type present float with our target data(quality) with integer data type.
+
+Exploratory Data Analysis
+- Univariate analysis is usually performed to know the distribution of the features present in our data. This analysis prepares them for preprocessing. This enebles us to understand our features and to know how skewed they are.
+- All the features  are skewed either to the left, right or both sides which indicates the presence of outliers.
+-Bivariate analysis is also performed to understand the correlation between the target and the features. From the analysis done, only alcohol ,pH, sulphates, and free sulphur dioxide are correlated with the target.
+
+Preprocessing
+- The target column which is the "quality" column was mapped  to enable us judge the quality of the wine produced, wheather it is bad, good, average, good or best.
+
+-The data was splitted into x and y. where x is the dependent variable and y is the independent variable(quality).
+-MinMaxScaler was used to scale our dataset so as to bring it into a common range.
+
+Data Training
+- Here, we splitted our data into training and testing sets in a ratio of 0.2 which means the traing see has 80% of the data and the testing set takes the remaining 20%. This will enable the model to have data for both training and testing sets.
+- Here we used Logistic Regression Classifier to train our model beacause our target variable is classified into 4 categories.A confusion matrix was plotted to understand the model better. 
+
+_
